@@ -7,16 +7,6 @@ import java.util.stream.Stream;
 public class ReorderDataInlnLogs {
 
     public static void main(String args[]) {
-        char c = 'a';
-        while (c < 123) {
-            System.out.println(c);
-            c++;
-        }
-
-        String log = "as df";
-        System.out.println(log.substring(0, log.indexOf(" ")) + "--" + log.substring(log.indexOf(" ") + 1));
-        System.out.println(startWithLetter("let1 56"));
-        System.out.println(startWithLetter("let1 asdf"));
         String[] logs = new String[]{"dig1 8 1 5 1", "let1 art can", "dig2 3 6", "let2 own kit dig", "let3 art zero"};
         reorderLogFiles(logs);
     }
